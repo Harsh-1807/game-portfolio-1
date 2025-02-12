@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600&display=swap');
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1d2e; /* Dark blue-gray */
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    background: #25293e;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: #00ffc8; /* Neon cyan */
+    text-shadow: 0 0 15px rgba(0, 255, 200, 0.6);
+}
+
+section {
+    padding: 40px 10%;
+}
+
+h2 {
+    border-left: 5px solid #00ffc8;
+    padding-left: 15px;
+    color: #00ffc8;
+    font-size: 2rem;
+}
+
+p, li {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+a {
+    color: #ff3b82;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #00ffc8;
+}
+
+/* Video Styling */
+video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 255, 200, 0.2);
+}
+
+/* Video Gallery */
+.video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.video-item {
+    text-align: center;
+    flex: 1 1 45%;
+}
+
+/* Game Showcase */
+.game-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.game-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #25293e;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.game-btn:hover {
+    transform: scale(1.05);
+}
+
+.game-thumbnail {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(255, 59, 130, 0.4);
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    background: #25293e;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+#contact a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 2px solid #ff3b82;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+#contact a:hover {
+    background: #ff3b82;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        padding: 30px 5%;
+    }
+    .game-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* About Me Section */
+#about {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 50px 10%;
+    flex-wrap: wrap;
+}
+
+/* Left Section (Text Content) */
+#about > div:first-child {
+    flex: 1;
+    max-width: 55%;
+}
+
+#about h2 {
+    font-size: 2rem;
+    border-left: 5px solid #00ffc8;
+    padding-left: 15px;
+    color: #00ffc8;
+}
+
+#about p, #about ul {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+#about ul {
+    list-style: none;
+    padding: 0;
+}
+
+#about ul li {
+    margin: 10px 0;
+}
+
+/* Right Section (Video) */
+.rhs-video {
+    flex: 1;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.rhs-video video {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 255, 200, 0.2);
+}
+
+.rhs-video p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+    #about > div:first-child, .rhs-video {
+        max-width: 100%;
+    }
+}
